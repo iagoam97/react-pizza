@@ -1,17 +1,24 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDom from "react-dom";
+import './reset.css';
 import './index.css';
-import App from './App';
+import NavBar from './components/navBar/navBar.jsx'
+import CardSabores from './components/cardsHome/cardSabores.jsx'
+
 import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+ReactDom.render(
+    <div id='box'>
+        <NavBar/>
+        <CardSabores/>
+        <h1>Teste Teste</h1>
+    </div>,
+    document.getElementById('root')
+
 );
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
