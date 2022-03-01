@@ -1,3 +1,5 @@
+
+/*          CardSobre          */
 .divCardSobre {
     background-color: #E02724;
 
@@ -5,11 +7,18 @@
     align-items: center;
     flex-direction: row;
     justify-content: space-around;
+
 }
 
+
+.fotoPizza {
+    margin: 10vh 10%;
+}
+
+
 .fotoPizza img {
-    width: 660px;
-    height: 320px;
+    width: 440px;
+    height: 280px;
 
 
     text-indent: 100%;
@@ -26,7 +35,63 @@ figcaption {
     margin-right: 20%;
 
     font-family: sans-serif;
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 600;
 
     text-align: center;
 }
+
+
+
+/*          CardSobre          */
+
+.divSabores {
+    background-color: #20630e;
+
+/*
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+*/
+
+    position: relative;
+    height: 60vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.imagemSabor{
+    width: 440px;
+    height: 280px;
+
+    border-radius: 10px;
+}
+
+.right-arrow {
+    position: absolute;
+    top: 50%;
+    right: 32px;
+    font-size: 3rem;
+    color: #000;
+
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+}
+.left-arrow {
+    position: absolute;
+    top: 50%;
+    left: 32px;
+    font-size: 3rem;
+    color: #000;
+    
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+}
+
