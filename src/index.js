@@ -3,8 +3,10 @@ import ReactDom from "react-dom";
 import './reset.css';
 import './index.css';
 import NavBar from './components/navBar/navBar.jsx'
-import CardSobre from './components/cardsHome/cardSobre.jsx'
+import Footer from './components/footer/footer.jsx'
 
+
+import CardSobre from './components/cardsHome/cardSobre.jsx'
 import CardSabores from './components/cardsHome/cardSabores.jsx'
 import {listSabores} from './components/cardsHome/listSabores';
 
@@ -15,7 +17,7 @@ ReactDom.render(
         <NavBar/>
         <CardSobre/>
         <CardSabores slides={listSabores} />
-        <h1>Teste Teste</h1>
+        <Footer/>
     </div>,
     document.getElementById('root')
 
