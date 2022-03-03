@@ -6,17 +6,14 @@ import NavBar from './components/navBar/navBar.jsx'
 import Footer from './components/footer/footer.jsx'
 
 
-import CardSobre from './components/cardsHome/cardSobre.jsx'
-import CardSabores from './components/cardsHome/cardSabores.jsx'
-import {listSabores} from './components/cardsHome/listSabores';
+import CardHome from './components/cardsHome/cardHome.jsx';
 
 import reportWebVitals from './reportWebVitals';
 
 ReactDom.render(
     <div id='box'>
         <NavBar/>
-        <CardSobre/>
-        <CardSabores slides={listSabores} />
+        <CardHome/>
         <Footer/>
     </div>,
     document.getElementById('root')

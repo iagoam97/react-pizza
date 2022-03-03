@@ -1,8 +1,7 @@
 import React, {useState} from "react";
-import './cardsCSS.css';
-import {listSabores} from './listSabores';
+import '../cardsCSS.css';
+import {listSabores} from '../../listaSabores/listSabores';
 import {FaArrowAltCircleRight, FaArrowAltCircleLeft} from 'react-icons/fa'
-//import logo from '../../assets/sabores/pizzaPeperoni.jpg';
 
 
 const CardSabores = ({ slides }) => {
@@ -38,25 +37,3 @@ if (!Array.isArray(slides) || slides.length <= 0) {
 };
 
 export default CardSabores;
-
-
-
-/*
-function cardSabores() {
-        return (
-            <div className="divSabores">
-                <div className="fotoPizza">
-                    <figure>
-                        <img src={logo} alt="Pizza-de-queijo"/>
-                        <figcaption>Pizza de queijo na apresentação</figcaption>
-                    </figure>
-                </div>
-                <div className="textoSobre">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris finibus elit ut imperdiet tincidunt. Phasellus dignissim purus orci, quis lacinia velit ullamcorper non. Donec vel libero eu est faucibus posuere nec laoreet turpis. 😋</p>
-                </div>
-            </div>
-        );
-    };
-
-export default cardSabores
-    */

@@ -1,6 +1,6 @@
 import React from "react";
-import './cardsCSS.css';
-import logo from '../../assets/sabores/pizzaPeperoni.jpg';
+import '../cardsCSS.css';
+import logo from '../../../assets/sabores/pizzaPeperoni.jpg';
 
 function cardSobre() {
         return (
@@ -18,4 +18,4 @@ function cardSobre() {
         );
     };
 
-export default cardSobre
+export default cardSobre;
