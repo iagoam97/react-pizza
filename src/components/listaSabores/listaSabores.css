@@ -1,0 +1,34 @@
+.divListaSabores {
+    background-color: blue;
+    background-image: linear-gradient(0deg, #20630e, #E02724);
+    padding: 1rem 0;
+}
+
+
+.imagemSabor{
+    width: 160px;
+    height: 120px;
+
+    border-radius: 10px;
+}
+
+.infoSabor {
+    display: flex;
+    align-items: center;
+    padding: 5vh 15%;
+    width: 60%;
+}
+
+.detalhesSabor {
+    color: aliceblue;
+    padding-left: 3vw;
+}
+.nomeSaborPizza {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+.descrSaborPizza {
+    font-size: 18px;
+    font-style: italic;
+}
