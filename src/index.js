@@ -5,15 +5,14 @@ import './index.css';
 import NavBar from './components/navBar/navBar.jsx'
 import Footer from './components/footer/footer.jsx'
 
-import CardHome from './components/cardsHome/cardHome.jsx';
-import ListaSabores from './components/listaSabores/listaSabores.jsx'
+//import CardHome from './components/cardsHome/cardHome.jsx';
+//import ListaSabores from './components/listaSabores/listaSabores.jsx'
 
 import reportWebVitals from './reportWebVitals';
 
 ReactDom.render(
     <div id='box'>
         <NavBar/>
-        <CardHome/>
         <Footer/>
     </div>,
     document.getElementById('root')
