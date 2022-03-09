@@ -1,0 +1,82 @@
+.divListaPedidos {
+    background-color: #E02724;
+    padding: 1rem 0;
+
+    display: flex;
+}
+
+.listaOpcoes {
+    max-width: 70%;
+    margin: 10vh;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.infoSaboresPedido {
+    max-width: 30%;
+    padding: 0 1vh 10vh 1vh;
+    border: outset #2833E0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.infoSaboresPedido:hover {
+    border: outset black;
+}
+.infoSaboresPedido:active {
+    color: aliceblue;
+    border: outset aliceblue;
+}
+.detalhesPedidos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.detalhesPedidos p {
+    margin: 2vh;
+    padding: 1vh;
+    
+    color: aliceblue;
+}
+.infoSaboresPedido img{
+    width: 160px;
+    height: 120px;
+    
+}
+
+
+.listaSelecionados {
+    max-width: 30%;
+    margin: 10vh 5vh;
+}
+.quadroSelecao {
+    width: 250px;
+    height: 400px;
+    border: solid black;
+}
+.btnsSelecao {
+    display: flex;
+    justify-content: center;
+}
+.btnsSelecao button {
+    padding: 7px;
+    margin: 10px;
+
+    background-color: transparent;
+    color: #2833E0;
+    border: outset #2833E0;
+    border-radius: 10px;
+}
+.btnsSelecao button:hover {
+    color: black;
+    border: outset black;
+}
+.btnsSelecao button:active {
+    color: aliceblue;
+    border: outset aliceblue;
+}

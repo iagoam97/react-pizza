@@ -6,6 +6,7 @@ import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
 
 import CardHome from '../cardsHome/cardHome.jsx';
 import ListaSabores from '../listaSabores/listaSabores.jsx';
+import ListaPedidos from '../listaPedidos/listaPedidos.jsx';
 
 function navegacao() {
         return (
@@ -27,6 +28,7 @@ function navegacao() {
                     <Routes>
                         <Route path="/" exact element={<CardHome/>}/>
                         <Route exact path="/cardapio" element={<ListaSabores/>}/>
+                        <Route exact path="/pedidos" element={<ListaPedidos/>}/>
                     </Routes>
                 </div>
             </Router>
