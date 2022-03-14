@@ -1,10 +1,14 @@
-import React from "react";
+import React, {setState} from "react";
 import ReactDOM from 'react-dom'
 import './listaPedidos.css';
 
 import {listSabores} from '../listaSabores/listSabores.js';
+import ModalCompra from '../modalPagamento/modalPagamento.jsx'
 
-function listaPedidos() {
+import { PayPalScriptProvider } from "@paypal/react-paypal-js";
+
+const listaPedidos = () =>  {
+//function listaPedidos() {
 
     const arrCarrinho = [];
 
@@ -20,7 +24,7 @@ function listaPedidos() {
 
         let getVlrCarrinho = document.getElementById("valorTotalCarrinho").textContent
         let somaVlrCarrinho = parseFloat(getVlrCarrinho) + parseFloat(valorPizzaSelecionada)
-        document.getElementById("valorTotalCarrinho").innerHTML=somaVlrCarrinho.toFixed(2);
+        document.getElementById("valorTotalCarrinho").innerHTML = somaVlrCarrinho.toFixed(2);
 
         const retornoDiv = 
             arrCarrinho.map(function(arrCarrinho, index) {
@@ -40,7 +44,17 @@ function listaPedidos() {
         ), document.getElementById('quadroSelecao'));
     }
 
+    function limparLista() {
+        arrCarrinho.splice(0, arrCarrinho.length)
+
+        document.getElementById("valorTotalCarrinho").innerHTML = "0.00"
+
+        ReactDOM.render((
+            ""
+        ), document.getElementById('quadroSelecao'));
+    }
     return (
+<PayPalScriptProvider options={{ "client-id": process.env.REACT_APP_PAYPAL_CLIENT_ID, currency: "BRL" }}>
         <div className="divListaPedidos">
             <div className="listaOpcoes">
                 {listSabores.map(function(sabor, index) {
@@ -61,17 +75,16 @@ function listaPedidos() {
                 <div id="quadroSelecao">
                 </div>
                 <div>
-                    <p id="valorTotalCarrinho" className="formatarDinheiro">0.00</p>
+                    <p id="valorTotalCarrinho" className="formatarDinheiro" >0.00</p>
                     <div className="btnsSelecao">
-                        <button id="btnEfetuarPedido">Efetuar Pedido</button>
-                        <button id="btnCancelarPedido">Limpar Pedido</button>
+                        <button id="btnLimparPedido" onClick={limparLista}>Limpar Pedido</button>
                     </div>
                 </div>
-
+                <ModalCompra />
             </div>
         </div>
+</PayPalScriptProvider>
     )
 }
-
 
 export default listaPedidos
