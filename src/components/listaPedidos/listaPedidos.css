@@ -54,10 +54,16 @@
     max-width: 30%;
     margin: 10vh 5vh;
 }
-.quadroSelecao {
+#quadroSelecao {
     width: 250px;
     height: 400px;
     border: solid black;
+}
+
+#valorTotalCarrinho {
+    font-size: 30px;
+    color: aliceblue;
+    padding: 0 20%;
 }
 .btnsSelecao {
     display: flex;
@@ -79,4 +85,37 @@
 .btnsSelecao button:active {
     color: aliceblue;
     border: outset aliceblue;
+}
+
+
+
+
+.pizzaCarrinho {
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+}
+.imgPizzaCarrinho {
+    padding: 0 10px;
+
+    width: 90px;
+    height: 60px;
+    border-radius: 50%;
+}
+.descrPizzaCarrinho {
+    padding: 0 0 0 10px;
+    font-size: 14px;
+    color: aliceblue;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.descrPizzaCarrinho p {
+    padding: 2px;
+}
+
+.formatarDinheiro::before {
+    content:"R$ ";
 }
