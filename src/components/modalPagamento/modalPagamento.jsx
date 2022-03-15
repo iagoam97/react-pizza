@@ -28,13 +28,14 @@ import './modalPagamento.css'
                     return actions.resolve()
                 }}
                 createOrder={(data, actions) =>{
+                    const vlrTotal = document.getElementById("valorTotalCarrinho").innerHTML
                     return actions.order.create({
                         purchase_units: [
                             {
                                 description: "Pizza",
                                 amount: {
                                     currency_code: "BRL",
-                                    value: 110.97
+                                    value: vlrTotal
                                 }
                             }
                         ]

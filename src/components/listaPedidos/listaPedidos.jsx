@@ -74,11 +74,9 @@ const listaPedidos = () =>  {
             <div className="listaSelecionados">
                 <div id="quadroSelecao">
                 </div>
-                <div>
+                <div className="btnsSelecao">
                     <p id="valorTotalCarrinho" className="formatarDinheiro" >0.00</p>
-                    <div className="btnsSelecao">
-                        <button id="btnLimparPedido" onClick={limparLista}>Limpar Pedido</button>
-                    </div>
+                    <button id="btnLimparPedido" onClick={limparLista}>Limpar Pedido</button>
                 </div>
                 <ModalCompra />
             </div>

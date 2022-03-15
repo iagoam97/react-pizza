@@ -27,8 +27,12 @@ if (!Array.isArray(slides) || slides.length <= 0) {
             {listSabores.map((slide, index) => {
                 return (
                     <div className={index === current ? 'slide active' : 'slide'} key={index}>
-                        {index === current && (<img src={slide.image} alt='sabores pizza' className="imagemSabor"/>)}
-                        
+                        <div className="divImagemDescr">
+                            {index === current && (<img src={slide.image} alt='sabores pizza' className="imagemSaborSlide"/>)}
+                            <div className="descricaoSaborPizza">
+                                <div class="text">{slide.nome}: {slide.ingredientes}</div>
+                            </div>
+                        </div>
                     </div>
                 )
             })}
