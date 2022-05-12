@@ -1,50 +1,107 @@
-#divNav {
-/*    background-color: #2833E0;    */
-    background-image: linear-gradient(0deg, #E02724, #2833E0);
-    margin: 0;
-    padding: 20px 20px 20px 0;
 
-    display: flex;
+@media(max-width: 1000px) {
+    #divNav {
+    /*    background-color: #2833E0;    */
+        background-image: linear-gradient(0deg, #E02724, #2833E0);
+        margin: 0;
+        padding: 20px 20px 20px 0;
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logoNav {
+        padding: 0;
+    }
+
+
+    .logoNav img {
+        width: 170px;
+        height: 90px;
+
+        
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+
+    }
+
+    figcaption {
+        visibility: hidden;
+    }
+
+    #navOptions {
+        margin-right: 5%;
+
+        display: flex;    
+        align-items: center;
+
+    }
+
+
+    #navOptions a {
+        padding: 5px;
+        margin: 20px 0;
+        font-size: 18px;
+
+        color: aliceblue;
+    }
+    #navOptions a:hover {
+        color: red;
+        text-decoration:underline;
+    }
 }
 
-.logoNav {
-    padding: 0;
-}
+
+@media(min-width: 1001px) {
+    #divNav {
+    /*    background-color: #2833E0;    */
+        background-image: linear-gradient(0deg, #E02724, #2833E0);
+        margin: 0;
+        padding: 20px 20px 20px 0;
+
+        display: flex;
+    }
+
+    .logoNav {
+        padding: 0;
+    }
 
 
-.logoNav img {
-    width: 170px;
-    height: 90px;
+    .logoNav img {
+        width: 170px;
+        height: 90px;
 
-    
-    text-indent: 100%;
-    white-space: nowrap;
-    overflow: hidden;
+        
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
 
-}
+    }
 
-figcaption {
-    visibility: hidden;
-}
+    figcaption {
+        visibility: hidden;
+    }
 
-#navOptions {
-    max-width: 1200px;
-    margin: 0 0 0 60%;
+    #navOptions {
+        max-width: 1200px;
+        margin: 0 0 0 60%;
 
-    display: flex;    
-    align-items: center;
+        display: flex;    
+        align-items: center;
 
-}
+    }
 
 
-#navOptions a {
-    padding: 5px;
-    margin: 20px 0;
-    font-size: 18px;
+    #navOptions a {
+        padding: 5px;
+        margin: 20px 0;
+        font-size: 18px;
 
-    color: aliceblue;
-}
-#navOptions a:hover {
-    color: red;
-    text-decoration:underline;
+        color: aliceblue;
+    }
+    #navOptions a:hover {
+        color: red;
+        text-decoration:underline;
+    }
 }

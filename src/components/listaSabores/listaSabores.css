@@ -1,33 +1,73 @@
-.divListaSabores {
-    background-color: #E02724;
-    padding: 1rem 0;
+
+@media(max-width: 1000px) {
+    .divListaSabores {
+        background-color: #E02724;
+        padding: 1rem 0;
+    }
+
+
+    .imagemSabor{
+        width: 160px;
+        height: 120px;
+
+        border-radius: 10px;
+    }
+
+    .infoSabor {
+        display: flex;
+        align-items: center;
+        padding: 5vh 15%;
+        width: 60%;
+    }
+
+    .detalhesSabor {
+        color: aliceblue;
+        padding-left: 3vw;
+    }
+    .nomeSaborPizza {
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 2rem;
+    }
+    .descrSaborPizza {
+        font-size: 18px;
+        font-style: italic;
+    }
 }
 
 
-.imagemSabor{
-    width: 160px;
-    height: 120px;
-
-    border-radius: 10px;
-}
-
-.infoSabor {
-    display: flex;
-    align-items: center;
-    padding: 5vh 15%;
-    width: 60%;
-}
-
-.detalhesSabor {
-    color: aliceblue;
-    padding-left: 3vw;
-}
-.nomeSaborPizza {
-    font-size: 22px;
-    font-weight: 600;
-    margin-bottom: 2rem;
-}
-.descrSaborPizza {
-    font-size: 18px;
-    font-style: italic;
+@media(min-width: 1001px) {
+    .divListaSabores {
+        background-color: #E02724;
+        padding: 1rem 0;
+    }
+    
+    
+    .imagemSabor{
+        width: 160px;
+        height: 120px;
+    
+        border-radius: 10px;
+    }
+    
+    .infoSabor {
+        display: flex;
+        align-items: center;
+        padding: 5vh 15%;
+        width: 60%;
+    }
+    
+    .detalhesSabor {
+        color: aliceblue;
+        padding-left: 3vw;
+    }
+    .nomeSaborPizza {
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 2rem;
+    }
+    .descrSaborPizza {
+        font-size: 18px;
+        font-style: italic;
+    }
 }

@@ -1,34 +1,76 @@
-#divFooter {
-    background-image: linear-gradient(0deg, #2833E0, #E02724);
-    margin: 0;
-    padding: 20px 20px 20px 0;
 
-    color: aliceblue;
+@media(max-width: 1000px) {
+    #divFooter {
+        background-image: linear-gradient(0deg, #2833E0, #E02724);
+        margin: 0;
+        padding: 20px 20px 20px 0;
 
-    display: flex;
-    align-items: center;
+        color: aliceblue;
+
+        display: flex;
+        align-items: center;
+        word-wrap: break-word;
+
+    }
+
+    .divFooterSobre {
+        max-width: 50%;
+        margin-left: 5%;
+    }
+    .divFooterSobre p {
+        padding-left: 10px;
+    }
+
+    .divFooterContato {
+        max-width: 50%;
+        margin: 0 5% 0 10%;
+    }
+    .divFooterContato p {
+        padding-left: 10px;
+    }
+    .divFooterContato a {
+        color: red;
+        text-decoration: none;
+    }
+    .divFooterContato a:hover {
+        color: aliceblue;
+        text-decoration:underline;
+    }
 }
 
-.divFooterSobre {
-    width: 50%;
-    margin: 0 20vh 0 20vh;
-}
-.divFooterSobre p {
-    padding-left: 10px;
-}
+@media(min-width: 1001px) {
+    #divFooter {
+        background-image: linear-gradient(0deg, #2833E0, #E02724);
+        margin: 0;
+        padding: 20px 20px 20px 0;
 
-.divFooterContato {
-    width: 50%;
-    margin: 0 10vh 0 40vh;
-}
-.divFooterContato p {
-    padding-left: 10px;
-}
-.divFooterContato a {
-    color: red;
-    text-decoration: none;
-}
-.divFooterContato a:hover {
-    color: aliceblue;
-    text-decoration:underline;
+        color: aliceblue;
+
+        display: flex;
+        align-items: center;
+    }
+
+    .divFooterSobre {
+        width: 50%;
+        margin: 0 20vh 0 20vh;
+    }
+    .divFooterSobre p {
+        padding-left: 10px;
+    }
+
+    .divFooterContato {
+        width: 50%;
+        margin: 0 10vh 0 40vh;
+    }
+    .divFooterContato p {
+        padding-left: 10px;
+    }
+    .divFooterContato a {
+        color: red;
+        text-decoration: none;
+    }
+    .divFooterContato a:hover {
+        color: aliceblue;
+        text-decoration:underline;
+    }
 }

@@ -1,124 +1,272 @@
-.divListaPedidos {
-    background-color: #E02724;
-    padding: 1rem 0;
 
-    display: flex;
-}
+@media(max-width: 1000px) {
+    .divListaPedidos {
+        background-color: #E02724;
+        padding: 1rem 0;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: flex-start;
+        justify-content: center;
+    }
 
-.listaOpcoes {
-    max-width: 70%;
-    margin: 10vh;
+    .listaOpcoes {
+        max-width: 70%;
+        margin: 10%;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: flex-start;
-}
+    .infoSaboresPedido {
+        max-width: 40%;
+        padding: 0 1vh 10vh 1vh;
+        border: outset #2833E0;
 
-.infoSaboresPedido {
-    max-width: 30%;
-    padding: 0 1vh 10vh 1vh;
-    border: outset #2833E0;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.infoSaboresPedido:hover {
-    border: outset black;
-}
-.infoSaboresPedido:active {
-    color: aliceblue;
-    border: outset aliceblue;
-}
-.detalhesPedidos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.detalhesPedidos p {
-    margin: 2vh;
-    padding: 1vh;
-    
-    color: aliceblue;
-}
-.infoSaboresPedido img{
-    width: 160px;
-    height: 120px;
-    
-}
-
-
-.listaSelecionados {
-    max-width: 30%;
-    margin: 10vh 5vh;
-}
-#quadroSelecao {
-    width: 250px;
-    height: 400px;
-    border: solid black;
-
-    overflow-y: scroll;
-}
-
-.btnsSelecao {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-#valorTotalCarrinho {
-    font-size: 30px;
-    color: aliceblue;
-    padding: 0 0;
-}
-.btnsSelecao button {
-    padding: 7px;
-    margin: 10px;
-
-    background-color: transparent;
-    color: #2833E0;
-    border: outset #2833E0;
-    border-radius: 10px;
-}
-.btnsSelecao button:hover {
-    color: black;
-    border: outset black;
-}
-.btnsSelecao button:active {
-    color: aliceblue;
-    border: outset aliceblue;
-}
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .infoSaboresPedido:hover {
+        border: outset black;
+    }
+    .infoSaboresPedido:active {
+        color: aliceblue;
+        border: outset aliceblue;
+    }
+    .detalhesPedidos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .detalhesPedidos p {
+        margin: 2vh;
+        padding: 1vh;
+        
+        color: aliceblue;
+    }
+    .infoSaboresPedido img{
+        width: 160px;
+        height: 120px;
+        
+    }
 
 
+    .listaSelecionados {
+        width: 400px;
+        max-width: 80%;
+        margin: 10vh 5vh;
+    }
+    #quadroSelecao {
+        width: 400px;
+        height: 400px;
+        border: solid black;
+
+        overflow-y: scroll;
+    }
+
+    .btnsSelecao {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    #valorTotalCarrinho {
+        font-size: 30px;
+        color: aliceblue;
+        padding: 0 0;
+    }
+    .btnsSelecao button {
+        padding: 7px;
+        margin: 10px;
+
+        background-color: transparent;
+        color: #2833E0;
+        border: outset #2833E0;
+        border-radius: 10px;
+    }
+    .btnsSelecao button:hover {
+        color: black;
+        border: outset black;
+    }
+    .btnsSelecao button:active {
+        color: aliceblue;
+        border: outset aliceblue;
+    }
 
 
-.pizzaCarrinho {
-    padding: 10px;
-    display: flex;
-    justify-content: flex-start;
+
+
+    .pizzaCarrinho {
+        width: 400px;
+        padding: 10px;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .imgPizzaCarrinho {
+        width: 40%;
+        object-fit: fill;
+
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        
+        padding: 0 10px;
+        border-radius: 50%;
+
+/*
+        padding: 0 10px;
+
+        width: 90px;
+        height: 60px;
+        border-radius: 50%;
+*/
+    }
+    .descrPizzaCarrinho {
+        padding: 0 0 0 5px;
+        font-size: 20px;
+        color: aliceblue;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .descrPizzaCarrinho p {
+        padding: 2px;
+    }
+
+    .formatarDinheiro::before {
+        content:"R$ ";
+    }
 }
-.imgPizzaCarrinho {
-    padding: 0 10px;
 
-    width: 90px;
-    height: 60px;
-    border-radius: 50%;
-}
-.descrPizzaCarrinho {
-    padding: 0 0 0 10px;
-    font-size: 14px;
-    color: aliceblue;
 
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-}
-.descrPizzaCarrinho p {
-    padding: 2px;
-}
+@media(min-width: 1001px) {
+    .divListaPedidos {
+        background-color: #E02724;
+        padding: 1rem 0;
 
-.formatarDinheiro::before {
-    content:"R$ ";
+        display: flex;
+    }
+
+    .listaOpcoes {
+        max-width: 70%;
+        margin: 10vh;
+
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .infoSaboresPedido {
+        max-width: 30%;
+        padding: 0 1vh 10vh 1vh;
+        border: outset #2833E0;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .infoSaboresPedido:hover {
+        border: outset black;
+    }
+    .infoSaboresPedido:active {
+        color: aliceblue;
+        border: outset aliceblue;
+    }
+    .detalhesPedidos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .detalhesPedidos p {
+        margin: 2vh;
+        padding: 1vh;
+        
+        color: aliceblue;
+    }
+    .infoSaboresPedido img{
+        width: 160px;
+        height: 120px;
+        
+    }
+
+
+    .listaSelecionados {
+        max-width: 30%;
+        margin: 10vh 5vh;
+    }
+    #quadroSelecao {
+        width: 250px;
+        height: 400px;
+        border: solid black;
+
+        overflow-y: scroll;
+    }
+
+    .btnsSelecao {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #valorTotalCarrinho {
+        font-size: 30px;
+        color: aliceblue;
+        padding: 0 0;
+    }
+    .btnsSelecao button {
+        padding: 7px;
+        margin: 10px;
+
+        background-color: transparent;
+        color: #2833E0;
+        border: outset #2833E0;
+        border-radius: 10px;
+    }
+    .btnsSelecao button:hover {
+        color: black;
+        border: outset black;
+    }
+    .btnsSelecao button:active {
+        color: aliceblue;
+        border: outset aliceblue;
+    }
+
+
+
+
+    .pizzaCarrinho {
+        padding: 10px;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .imgPizzaCarrinho {
+        padding: 0 10px;
+
+        width: 90px;
+        height: 60px;
+        border-radius: 50%;
+    }
+    .descrPizzaCarrinho {
+        padding: 0 0 0 10px;
+        font-size: 14px;
+        color: aliceblue;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .descrPizzaCarrinho p {
+        padding: 2px;
+    }
+
+    .formatarDinheiro::before {
+        content:"R$ ";
+    }
 }

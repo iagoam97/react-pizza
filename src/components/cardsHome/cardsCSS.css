@@ -1,118 +1,241 @@
 
-/*          CardSobre          */
-.divCardSobre {
-    background-color: #E02724;
+@media(max-width: 1000px) {
+    /*          CardSobre          */
+    .divCardSobre {
+        background-color: #E02724;
 
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-around;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
+        padding: 10vh 5%;
+
+    }
+
+
+    .fotoPizza {
+        max-width: 440px;
+    }
+
+
+    .fotoPizza img {
+        width: 100%;
+        object-fit: fill;
+
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    figcaption {
+        visibility: hidden;
+    }
+
+    .textoSobre {
+        padding: 0 20px;
+
+        font-family: sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+
+        text-align: center;
+    }
+
+
+
+    /*          CardSabores          */
+
+    .divSabores {
+        background-color: #E02724;
+
+        position: relative;
+        height: 60vh;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .divImagemDescr {
+        max-width: 440px;
+        position: relative;
+    }
+
+    .imagemSaborSlide{
+        display: block;
+        width: 100%;
+        object-fit: fill;
+
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    .descricaoSaborPizza {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-image: linear-gradient(0deg, #2833E0, transparent);
+    }
+    .active .divImagemDescr:hover .descricaoSaborPizza{
+        opacity: 1;
+    }
+    /*
+    .text {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 80%;
+        left: 10%;
+        transform: translate(-5%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
+*/
+    .right-arrow {
+        position: absolute;
+        top: 50%;
+        right: 32px;
+        font-size: 3rem;
+        color: #000;
+
+        z-index: 10;
+        cursor: pointer;
+        user-select: none;
+    }
+    .left-arrow {
+        position: absolute;
+        top: 50%;
+        left: 32px;
+        font-size: 3rem;
+        color: #000;
+        
+        z-index: 10;
+        cursor: pointer;
+        user-select: none;
+    }
 }
 
+@media(min-width: 1001px) {
+    /*          CardSobre          */
+    .divCardSobre {
+        background-color: #E02724;
 
-.fotoPizza {
-    margin: 10vh 10%;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+
+
+    .fotoPizza {
+        margin: 10vh 10%;
+    }
+
+
+    .fotoPizza img {
+        width: 440px;
+        height: 280px;
+
+
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    figcaption {
+        visibility: hidden;
+    }
+
+    .textoSobre {
+        padding: 0 20px;
+        margin-right: 20%;
+
+        font-family: sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+
+        text-align: center;
+    }
+
+
+
+    /*          CardSabores          */
+
+    .divSabores {
+        background-color: #E02724;
+
+        position: relative;
+        height: 60vh;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .divImagemDescr {
+        position: relative;
+    }
+
+    .imagemSaborSlide{
+        display: block;
+        width: 440px;
+        height: 280px;
+
+        border-radius: 10px;
+    }
+    .descricaoSaborPizza {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-image: linear-gradient(0deg, #2833E0, transparent);
+    }
+    .active .divImagemDescr:hover .descricaoSaborPizza{
+        opacity: 1;
+    }
+    .text {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 80%;
+        left: 10%;
+        transform: translate(-5%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
+
+    .right-arrow {
+        position: absolute;
+        top: 50%;
+        right: 32px;
+        font-size: 3rem;
+        color: #000;
+
+        z-index: 10;
+        cursor: pointer;
+        user-select: none;
+    }
+    .left-arrow {
+        position: absolute;
+        top: 50%;
+        left: 32px;
+        font-size: 3rem;
+        color: #000;
+        
+        z-index: 10;
+        cursor: pointer;
+        user-select: none;
+    }
 }
-
-
-.fotoPizza img {
-    width: 440px;
-    height: 280px;
-
-
-    text-indent: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-}
-
-figcaption {
-    visibility: hidden;
-}
-
-.textoSobre {
-    padding: 0 20px;
-    margin-right: 20%;
-
-    font-family: sans-serif;
-    font-size: 18px;
-    font-weight: 600;
-
-    text-align: center;
-}
-
-
-
-/*          CardSabores          */
-
-.divSabores {
-    background-color: #E02724;
-
-    position: relative;
-    height: 60vh;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.divImagemDescr {
-    position: relative;
-}
-
-.imagemSaborSlide{
-    display: block;
-    width: 440px;
-    height: 280px;
-
-    border-radius: 10px;
-}
-.descricaoSaborPizza {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-image: linear-gradient(0deg, #2833E0, transparent);
-}
-.active .divImagemDescr:hover .descricaoSaborPizza{
-    opacity: 1;
-}
-.text {
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 80%;
-    left: 10%;
-    transform: translate(-5%, -50%);
-    -ms-transform: translate(-50%, -50%);
-}
-
-.right-arrow {
-    position: absolute;
-    top: 50%;
-    right: 32px;
-    font-size: 3rem;
-    color: #000;
-
-    z-index: 10;
-    cursor: pointer;
-    user-select: none;
-}
-.left-arrow {
-    position: absolute;
-    top: 50%;
-    left: 32px;
-    font-size: 3rem;
-    color: #000;
-    
-    z-index: 10;
-    cursor: pointer;
-    user-select: none;
-}
-
